@@ -1,0 +1,37 @@
+@import "/src/app/styles/variables";
+
+
+.btn {
+  height: 2rem;
+  //   border: 0;
+  font-weight: 500;
+  font-size: 1rem;
+
+  font-family: "Fira Code", monospace;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.primary {
+  border: 1px solid $primary;
+  transition: all 0.2s ease-in-out;
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.2);
+    }
+  }
+}
+
+.default {
+  border: 1px solid $gray;
+  color: $gray;
+  transition: all 0.2s ease-in-out;
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: $gray, $alpha: 0.2);
+    }
+  }
+}

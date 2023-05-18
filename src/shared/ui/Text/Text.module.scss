@@ -1,0 +1,56 @@
+@import "/src/app/styles/variables";
+
+.p {
+  color: $gray;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 2rem;
+
+  line-height: 3rem;
+
+  span {
+    color: $primary;
+    animation: glowing 1300ms infinite;
+  }
+}
+
+.h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: 1rem;
+
+  span {
+    color: $gray;
+  }
+}
+
+.h4 {
+  font-weight: 600;
+  font-size: 1rem;
+
+  span {
+    color: $gray;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    color: rgba($color: $primary, $alpha: 1);
+  }
+  50% {
+    color: rgba($color: $primary, $alpha: 0.5);
+  }
+  100% {
+    color: rgba($color: $primary, $alpha: 1);
+  }
+}
