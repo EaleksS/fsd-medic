@@ -17,7 +17,7 @@ export const Login: FC = (): JSX.Element => {
           Забыли пароль
         </Link>
         <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>
-          {isLoading ? <Loader w={40} h={40} /> : "Войти"}
+          {isLoading ? <Loader w={30} h={30} /> : "Войти"}
         </Button>
         <Text type="h5">
           Нет учетной записи?

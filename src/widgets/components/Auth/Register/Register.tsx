@@ -16,7 +16,7 @@ export const Register: FC = (): JSX.Element => {
         <Input type="password" placholder="Повторите пароль" />
 
         <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>
-          {isLoading ? <Loader w={40} h={40} /> : "Зарегистрироваться"}
+          {isLoading ? <Loader w={30} h={30} /> : "Зарегистрироваться"}
         </Button>
         <Text type="h5">
           Уже имеется аккаунт? <Link to="/auth/login">Войти</Link>

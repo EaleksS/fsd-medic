@@ -38,7 +38,7 @@ export const Recovery: FC = (): JSX.Element => {
           <Input type="tel" placholder="Введите телефон" />
         )}
         <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>
-          {isLoading ? <Loader w={40} h={40} /> : "Отправить"}
+          {isLoading ? <Loader w={30} h={30} /> : "Отправить"}
         </Button>
         <Text type="h5">
           Уже имеется аккаунт? <Link to="/auth/login">Войти</Link>
