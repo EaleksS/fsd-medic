@@ -1,9 +1,11 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./Register.module.scss";
-import { Button, Input, Text } from "../../../../shared";
+import { Button, Input, Loader, Text } from "../../../../shared";
 import { Link } from "react-router-dom";
 
 export const Register: FC = (): JSX.Element => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   return (
     <div className={styles.register}>
       <Text type="h1">Регистрация</Text>
@@ -13,7 +15,9 @@ export const Register: FC = (): JSX.Element => {
         <Input type="password" placholder="Придумайте пароль" />
         <Input type="password" placholder="Повторите пароль" />
 
-        <Button type="primary">Зарегистрироваться</Button>
+        <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>
+          {isLoading ? <Loader w={40} h={40} /> : "Зарегистрироваться"}
+        </Button>
         <Text type="h5">
           Уже имеется аккаунт? <Link to="/auth/login">Войти</Link>
         </Text>
