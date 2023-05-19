@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import styles from "./Sidebar.module.scss";
 import { Text } from "../../../shared";
 
@@ -7,6 +7,14 @@ interface Props {
 }
 
 export const Sidebar: FC<Props> = ({ isActive }): JSX.Element => {
+  useEffect(() => {
+    if (isActive) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  }, [isActive]);
+
   return (
     <div
       className={`${styles.sidebar} ${isActive && styles.active}`}
