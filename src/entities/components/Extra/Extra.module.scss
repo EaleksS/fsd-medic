@@ -1,0 +1,114 @@
+@import "/src/app/styles/variables";
+
+.extra {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(calc(-50% + 2px));
+
+  .btn2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.3s;
+
+    cursor: pointer;
+  }
+
+  .btn2_1 {
+    &.active {
+      opacity: 1;
+      transform: scale(1) translateX(-4rem) translateY(-4rem);
+    }
+  }
+
+  .btn2_2 {
+    &.active {
+      opacity: 1;
+      transform: scale(1) translateX(1rem) translateY(-6rem);
+    }
+  }
+
+  .btn {
+    background: $primary;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    border: 0.5rem solid $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.active {
+      .phone {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      .plus {
+        transform: scale(2) translate(-5.5px, 6px) rotate(225deg);
+      }
+    }
+
+    .phone {
+      transition: all 0.2s ease-in-out;
+      width: 30px;
+      height: 30px;
+    }
+
+    .plus {
+      transition: all 0.3s ease-in-out;
+
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      right: 5px;
+    }
+
+    // &.active {
+    //   &::before {
+    //     filter: blur(1rem);
+    //   }
+
+    //   &::after {
+    //     filter: blur(1rem);
+    //   }
+    // }
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: calc(50% - 2px);
+    //   left: -20px;
+    //   width: 20px;
+    //   height: 20px;
+    //   background: transparent;
+    //   border-top-right-radius: 50%;
+    //   box-shadow: 5px -10px 0 0 $bg-color;
+    //   //   filter: blur(1rem);
+    // }
+
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   top: calc(50% - 2px);
+    //   right: -36px;
+    //   width: 20px;
+    //   height: 20px;
+    //   background: transparent;
+    //   border-top-left-radius: 50%;
+    //   box-shadow: -5px -10px 0 0 $bg-color;
+    // }
+  }
+}
