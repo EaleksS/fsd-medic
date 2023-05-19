@@ -16,7 +16,7 @@ export const DoctorCard: FC = (): JSX.Element => {
           Хирург
         </Text>
         <div className={styles.info}>
-          <Rating rating={4} />
+          <Rating rating={4.5} />
           <img src="/post/pereslat.svg" alt="pereslat" />
         </div>
       </div>
