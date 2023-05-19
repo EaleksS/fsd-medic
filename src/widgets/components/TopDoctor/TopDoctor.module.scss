@@ -1,0 +1,15 @@
+.top {
+  margin-top: 1rem;
+  padding: 0 20px;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .doctors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}

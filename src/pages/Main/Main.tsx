@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Layout, Post } from "../../widgets";
+import { Layout, Post, TopDoctor } from "../../widgets";
 import { Text } from "../../shared";
 import { Rating } from "../../features";
 
@@ -8,6 +8,9 @@ export const Main: FC = (): JSX.Element => {
     <Layout>
       <div>
         <Post />
+        <br />
+        <br />
+        <TopDoctor />
         <br />
         <br />
         <Rating rating={1} />

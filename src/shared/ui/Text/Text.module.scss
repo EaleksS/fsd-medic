@@ -54,6 +54,10 @@
   font-size: 0.93rem;
 
   line-height: 1.18rem;
+
+  span {
+    color: $paragraph;
+  }
 }
 
 @keyframes glowing {
