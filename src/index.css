@@ -13,6 +13,8 @@
 }
 
 body {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  @media (max-width: 800px) {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
 }
