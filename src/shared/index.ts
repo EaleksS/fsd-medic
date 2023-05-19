@@ -6,6 +6,7 @@ import { Loader } from "./ui/Loader/Loader";
 import { useWindowDimensions } from "./lib/hooks/useWindowDimensions";
 import { Blur } from "./ui/Blur/Blur";
 import { ISearch } from "./ui/ISearch/ISearch";
+import { useLocation } from "./lib/hooks/useLocation";
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Loader,
   Blur,
   ISearch,
+  useLocation,
 };
