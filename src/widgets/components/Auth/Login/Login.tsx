@@ -13,7 +13,7 @@ export const Login: FC = (): JSX.Element => {
         <Input type="email" />
         <Input type="password" />
 
-        <Link to=".#" className={styles.z_pass}>
+        <Link to="/auth/recovery" className={styles.z_pass}>
           Забыли пароль
         </Link>
         <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>

@@ -6,6 +6,7 @@ import { MessagePage } from "../Message/Message";
 import { MapPage } from "../Map/Map";
 import { LoginPage } from "../Auth/Login/Login";
 import { RegisterPage } from "../Auth/Register/Register";
+import { RecoveryPage } from "../Auth/Recovery/Recovery";
 
 export const routes: RouteData[] = [
   { path: "/", Component: Main, key: "main_page" },
@@ -14,5 +15,6 @@ export const routes: RouteData[] = [
   { path: "/map", Component: MapPage, key: "map_page" },
   { path: "/auth/login", Component: LoginPage, key: "login_page" },
   { path: "/auth/register", Component: RegisterPage, key: "register_page" },
+  { path: "/auth/recovery", Component: RecoveryPage, key: "recovery_page" },
   { path: "*", Component: NotFound, key: "not-found_page" },
 ];

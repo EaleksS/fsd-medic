@@ -4,5 +4,6 @@ import { TopDoctor } from "./components/TopDoctor/TopDoctor";
 import { Map } from "./components/Map/Map";
 import { Login } from "./components/Auth/Login/Login";
 import { Register } from "./components/Auth/Register/Register";
+import { Recovery } from "./components/Auth/Recovery/Recovery";
 
-export { Layout, Post, TopDoctor, Map, Login, Register };
+export { Layout, Post, TopDoctor, Map, Login, Register, Recovery };
