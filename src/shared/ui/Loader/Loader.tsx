@@ -4,15 +4,21 @@ import styles from "./Loader.module.scss";
 
 interface Props {
   className?: string;
+  h?: number;
+  w?: number;
 }
 
-export const Loader: FC<Props> = ({ className }): JSX.Element => {
+export const Loader: FC<Props> = ({
+  className,
+  h = 80,
+  w = 80,
+}): JSX.Element => {
   return (
     <div className={`${styles.loader} ${className}`}>
       <ColorRing
         visible={true}
-        height="80"
-        width="80"
+        height={h}
+        width={w}
         ariaLabel="blocks-loading"
         wrapperStyle={{}}
         wrapperClass="blocks-wrapper"

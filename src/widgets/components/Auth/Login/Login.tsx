@@ -1,9 +1,11 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./Login.module.scss";
-import { Button, Input, Text } from "../../../../shared";
+import { Button, Input, Loader, Text } from "../../../../shared";
 import { Link } from "react-router-dom";
 
 export const Login: FC = (): JSX.Element => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   return (
     <div className={styles.login}>
       <Text type="h1">Войти</Text>
@@ -14,7 +16,9 @@ export const Login: FC = (): JSX.Element => {
         <Link to=".#" className={styles.z_pass}>
           Забыли пароль
         </Link>
-        <Button type="primary">Войти</Button>
+        <Button type="primary" onClick={() => setIsLoading((prev) => !prev)}>
+          {isLoading ? <Loader w={40} h={40} /> : "Войти"}
+        </Button>
         <Text type="h5">
           Нет учетной записи?
           <Link to="/auth/register"> Зарегистрироваться</Link>
