@@ -16,7 +16,8 @@ export const Login: FC = (): JSX.Element => {
         </Link>
         <Button type="primary">Войти</Button>
         <Text type="h5">
-          Нет учетной записи? <Link to=".#"> Зарегистрироваться</Link>
+          Нет учетной записи?
+          <Link to="/auth/register"> Зарегистрироваться</Link>
         </Text>
       </form>
       <div className={styles.or}>
