@@ -1,0 +1,72 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(100vw - 5rem);
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  backdrop-filter: blur(1rem);
+  z-index: 4;
+  border-radius: 0 30px 30px 0;
+
+  opacity: 0;
+  transform: translateX(-100vw);
+  transition: all 0.2s ease-in-out;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem;
+
+    .user {
+      margin-top: 2rem;
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        .logout {
+          position: absolute;
+          bottom: 0;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: #fff;
+          height: 4rem;
+          cursor: pointer;
+
+          .line {
+            position: fixed;
+            transform: translateY(-2rem);
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #fff;
+            opacity: 0.2;
+
+            &_bottom {
+              position: absolute;
+              transform: translateY(2rem);
+              left: 0;
+              right: 0;
+              height: 1px;
+              background: #fff;
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
