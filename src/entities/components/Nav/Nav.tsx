@@ -9,7 +9,7 @@ export const Nav: FC = (): JSX.Element => {
   return (
     <nav className={styles.nav}>
       <ul>
-        <li>
+        <li onClick={() => navigate("/account")}>
           <div className={styles.line}></div>
           <img src="/nav/profile.svg" alt="profile" />
           <Text type="h3" fw="500">

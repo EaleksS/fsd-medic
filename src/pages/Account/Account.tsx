@@ -51,7 +51,7 @@ export const AccountPage: FC = (): JSX.Element => {
         <Dropdown
           name={
             <>
-              <img src="/account/family.svg" alt="family" /> Защита профиля
+              <img src="/account/family.svg" alt="family" /> Моя семья
             </>
           }
           isActive={isActiveFamily}
@@ -64,7 +64,7 @@ export const AccountPage: FC = (): JSX.Element => {
         <Dropdown
           name={
             <>
-              <img src="/account/center.svg" alt="center" /> Защита профиля
+              <img src="/account/center.svg" alt="center" /> Ведущий центр
             </>
           }
           isActive={isActiveCenter}
