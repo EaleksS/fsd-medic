@@ -1,18 +1,18 @@
 @import "/src/app/styles/variables";
 
 .p {
-  color: $gray;
+  color: $paragraph;
 
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 .h1 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.25rem;
 
-  line-height: 3rem;
+  line-height: 1.5rem;
 
   span {
     color: $primary;
@@ -22,12 +22,16 @@
 
 .h2 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+
+  line-height: 1.5rem;
 }
 
 .h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
+
+  line-height: 1.18rem;
 
   span {
     color: $gray;
@@ -35,12 +39,21 @@
 }
 
 .h4 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
+
+  line-height: 1.18rem;
 
   span {
     color: $gray;
   }
+}
+
+.h5 {
+  font-weight: 500;
+  font-size: 0.93rem;
+
+  line-height: 1.18rem;
 }
 
 @keyframes glowing {
