@@ -7,6 +7,7 @@ import { useWindowDimensions } from "./lib/hooks/useWindowDimensions";
 import { Blur } from "./ui/Blur/Blur";
 import { ISearch } from "./ui/ISearch/ISearch";
 import { useLocation } from "./lib/hooks/useLocation";
+import { Input } from "./ui/Input/Input";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Blur,
   ISearch,
   useLocation,
+  Input,
 };

@@ -1,0 +1,35 @@
+@import "/src/app/styles/variables";
+
+.label {
+  background: $blue;
+  border-radius: 10px;
+  border: 0;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+  overflow: hidden;
+
+  img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+  }
+
+  div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      font-weight: 400;
+      font-size: 16px;
+      outline: none;
+      height: 100%;
+      border: 0;
+      background: transparent;
+    }
+  }
+}

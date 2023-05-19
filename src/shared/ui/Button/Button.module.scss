@@ -1,25 +1,53 @@
 @import "/src/app/styles/variables";
 
-
 .btn {
-  height: 2rem;
-  //   border: 0;
-  font-weight: 500;
-  font-size: 1rem;
+  height: 50px;
+  border: 0;
 
   font-family: "Fira Code", monospace;
   background: transparent;
   cursor: pointer;
   padding: 0 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  position: relative;
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .primary {
-  border: 1px solid $primary;
+  // border: 1px solid $primary;
   transition: all 0.2s ease-in-out;
+  background-color: $primary;
+  color: #fff;
+  border-radius: 50px;
 
   @media (min-width: 800px) {
     &:hover {
-      background-color: rgba($color: $primary, $alpha: 0.2);
+      background-color: rgba($color: $primary, $alpha: 0.6);
+    }
+  }
+}
+
+.social {
+  border: 1px solid rgba($color: $paragraph, $alpha: 0.2);
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+
+  img {
+    position: absolute;
+    left: 10px;
+  }
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: $gray, $alpha: 0.2);
     }
   }
 }

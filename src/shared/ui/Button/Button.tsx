@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 import styles from "./Button.module.scss";
 
 interface Props {
-  type?: "default" | "primary";
+  type?: "default" | "primary" | "social";
   children: ReactNode;
   onClick?: (handleClick?: (arg?: ReactNode) => void) => void;
   mt?: string;
@@ -19,6 +19,17 @@ export const Button: FC<Props> = ({
       return (
         <button
           className={`${styles.btn} ${styles.primary}`}
+          style={{ marginTop: mt }}
+          onClick={() => onClick()}
+        >
+          {children}
+        </button>
+      );
+
+    case "social":
+      return (
+        <button
+          className={`${styles.btn} ${styles.social}`}
           style={{ marginTop: mt }}
           onClick={() => onClick()}
         >

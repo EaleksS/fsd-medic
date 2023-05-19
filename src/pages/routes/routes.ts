@@ -4,11 +4,15 @@ import { NotFound } from "../NotFound/NotFound";
 import { SearchPage } from "../Search/Search";
 import { MessagePage } from "../Message/Message";
 import { MapPage } from "../Map/Map";
+import { LoginPage } from "../Auth/Login/Login";
+import { RegisterPage } from "../Auth/Register/Register";
 
 export const routes: RouteData[] = [
   { path: "/", Component: Main, key: "main_page" },
   { path: "/search", Component: SearchPage, key: "search_page" },
   { path: "/message", Component: MessagePage, key: "message_page" },
   { path: "/map", Component: MapPage, key: "map_page" },
+  { path: "/auth/login", Component: LoginPage, key: "login_page" },
+  { path: "/auth/register", Component: RegisterPage, key: "register_page" },
   { path: "*", Component: NotFound, key: "not-found_page" },
 ];

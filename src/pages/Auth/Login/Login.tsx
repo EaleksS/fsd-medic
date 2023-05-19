@@ -1,8 +1,11 @@
-import  { FC } from 'react'
-// import styles from './Login.module.scss'
+import { FC } from "react";
+import { Login } from "../../../widgets";
+import styles from "./Login.module.scss";
 
-export const Login:FC = ():JSX.Element => {
+export const LoginPage: FC = (): JSX.Element => {
   return (
-    <div>Login</div>
-  )
-}
+    <div className={styles.container}>
+      <Login />
+    </div>
+  );
+};
