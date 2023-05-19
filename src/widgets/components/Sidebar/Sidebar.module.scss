@@ -27,46 +27,5 @@
     .user {
       margin-top: 2rem;
     }
-
-    .nav {
-      ul {
-        display: flex;
-        flex-direction: column;
-
-        .logout {
-          position: absolute;
-          bottom: 0;
-        }
-
-        li {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          color: #fff;
-          height: 4rem;
-          cursor: pointer;
-
-          .line {
-            position: fixed;
-            transform: translateY(-2rem);
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: #fff;
-            opacity: 0.2;
-
-            &_bottom {
-              position: absolute;
-              transform: translateY(2rem);
-              left: 0;
-              right: 0;
-              height: 1px;
-              background: #fff;
-              opacity: 0.2;
-            }
-          }
-        }
-      }
-    }
   }
 }

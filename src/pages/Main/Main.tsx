@@ -1,11 +1,22 @@
 import { FC } from "react";
-import { Layout } from "../../widgets";
+import { Layout, Post } from "../../widgets";
 import { Text } from "../../shared";
+import { Rating } from "../../features";
 
 export const Main: FC = (): JSX.Element => {
   return (
     <Layout>
-      <div style={{ padding: "1rem" }}>
+      <div>
+        <Post />
+        <br />
+        <br />
+        <Rating rating={1} />
+        <Rating rating={2} />
+        <Rating rating={3} />
+        <Rating rating={4} />
+        <Rating rating={5} />
+        <br />
+        <br />
         <Text type="h1">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
           eum?

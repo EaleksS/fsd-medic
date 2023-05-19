@@ -1,0 +1,41 @@
+.post {
+  margin: 1rem 0;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .desc {
+    margin-top: 5px;
+  }
+
+  .slider {
+    margin-top: 1rem;
+    height: 200px;
+    background: #000;
+    opacity: 0.7;
+  }
+
+  .nav_bar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .btns {
+      display: flex;
+      gap: 2.5rem;
+
+      .img {
+        cursor: pointer;
+      }
+    }
+  }
+}
