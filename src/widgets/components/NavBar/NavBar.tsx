@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "./NavBar.module.scss";
 import { Extra } from "../../../entities";
 import { Blur } from "../../../shared";
