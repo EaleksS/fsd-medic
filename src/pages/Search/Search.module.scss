@@ -1,0 +1,26 @@
+@import "/src/app/styles/variables";
+
+.search {
+  margin-top: 1rem;
+  padding: 0 20px;
+}
+
+.nav {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: 2px solid transparent;
+    background: transparent;
+    width: 120px;
+
+    &.active {
+      border-bottom: 2px solid $paragraph;
+    }
+  }
+}
+
+.cards {
+  padding: 0 5px;
+}

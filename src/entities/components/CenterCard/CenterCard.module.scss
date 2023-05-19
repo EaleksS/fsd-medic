@@ -1,0 +1,87 @@
+@import "/src/app/styles/variables";
+
+.card {
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 182px;
+  border-radius: 20px;
+  background: #000;
+
+  .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 1rem;
+
+    .stars {
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .count {
+      background: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      border-radius: 10px;
+    }
+  }
+
+  .info {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    nav {
+      background: #fff;
+      border-radius: 10px;
+
+      ul {
+        li {
+          border-bottom: 1px solid $paragraph;
+          padding: 5px 15px;
+        }
+
+        li:nth-child(3) {
+          border: 0;
+        }
+      }
+    }
+
+    .view {
+      background: #fff;
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

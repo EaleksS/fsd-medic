@@ -5,6 +5,7 @@ import { useCopyToClipboard } from "./lib/hooks/useCopyToClipboard";
 import { Loader } from "./ui/Loader/Loader";
 import { useWindowDimensions } from "./lib/hooks/useWindowDimensions";
 import { Blur } from "./ui/Blur/Blur";
+import { ISearch } from "./ui/ISearch/ISearch";
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   useWindowDimensions,
   Loader,
   Blur,
+  ISearch,
 };
