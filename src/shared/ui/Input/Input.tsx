@@ -54,8 +54,7 @@ export const Input: FC<Props> = ({
 
     default:
       return (
-        <label className={styles.label}>
-          <img src="/navbar/search.svg" alt="" />
+        <label className={`${styles.label} ${styles.default}`}>
           <div>
             <input
               type="text"

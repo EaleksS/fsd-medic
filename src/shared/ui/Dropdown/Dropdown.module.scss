@@ -1,0 +1,38 @@
+.dropdown {
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  .title {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+
+      transition: all 0.2s ease-in-out;
+
+      &.active {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  .inputs {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

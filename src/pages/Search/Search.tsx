@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { Layout } from "../../widgets";
 import styles from "./Search.module.scss";
-import { ISearch, Text } from "../../shared";
+import { ISearch } from "../../shared";
 import { CenterCard } from "../../entities";
 
 export const SearchPage: FC = (): JSX.Element => {
@@ -9,23 +9,25 @@ export const SearchPage: FC = (): JSX.Element => {
 
   return (
     <Layout>
+      <div className={styles.search}>
+        <div className={styles.back}>{"<"}</div>
+        <ISearch />
+      </div>
       <div className={styles.nav}>
         <button
           className={`${select === "center" && styles.active}`}
           onClick={() => setSelect("center")}
         >
-          <Text type="h2">Центры</Text>
+          Центры
         </button>
         <button
           className={`${select === "clinic" && styles.active}`}
           onClick={() => setSelect("clinic")}
         >
-          <Text type="h2">Клиника</Text>
+          Клиники
         </button>
       </div>
-      <div className={styles.search}>
-        <ISearch />
-      </div>
+
       <div className={styles.cards}>
         {[0, 1].map((e) => (
           <CenterCard key={e} />

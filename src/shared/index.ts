@@ -8,6 +8,7 @@ import { Blur } from "./ui/Blur/Blur";
 import { ISearch } from "./ui/ISearch/ISearch";
 import { useLocation } from "./lib/hooks/useLocation";
 import { Input } from "./ui/Input/Input";
+import { Dropdown } from "./ui/Dropdown/Dropdown";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   ISearch,
   useLocation,
   Input,
+  Dropdown
 };
