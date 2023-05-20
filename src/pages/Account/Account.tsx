@@ -23,7 +23,6 @@ export const AccountPage: FC = (): JSX.Element => {
           }
           isActive={isActiveProfile}
           setIsActive={setIsActiveProfile}
-          act_height={600}
         >
           <Input placholder="Имя" />
           <Input placholder="Фамилия" />
@@ -42,7 +41,6 @@ export const AccountPage: FC = (): JSX.Element => {
           }
           isActive={isActiveSecurity}
           setIsActive={setIsActiveSecurity}
-          act_height={205}
         >
           <Input placholder="Номер телефона" />
           <Input placholder="Эл.почта" />
@@ -55,7 +53,6 @@ export const AccountPage: FC = (): JSX.Element => {
           }
           isActive={isActiveFamily}
           setIsActive={setIsActiveFamily}
-          act_height={205}
         >
           <Input />
           <Input />

@@ -7,7 +7,6 @@ interface Props {
   setIsActive: Dispatch<React.SetStateAction<boolean>>;
   children: ReactNode;
   name: JSX.Element;
-  act_height: number;
 }
 
 export const Dropdown: FC<Props> = ({
@@ -15,12 +14,10 @@ export const Dropdown: FC<Props> = ({
   setIsActive,
   children,
   name,
-  act_height,
 }): JSX.Element => {
   return (
     <div
-      className={`${styles.dropdown}`}
-      style={isActive ? { height: act_height } : {}}
+      className={`${styles.dropdown} ${isActive && styles.active}`}
     >
       <div
         className={styles.title}
