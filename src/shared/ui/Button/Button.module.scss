@@ -4,7 +4,6 @@
   height: 50px;
   border: 0;
 
-  font-family: "Fira Code", monospace;
   background: transparent;
   cursor: pointer;
   padding: 0 16px;
@@ -14,10 +13,6 @@
   line-height: 19px;
 
   position: relative;
-
-  &:active {
-    transform: scale(0.95);
-  }
 }
 
 .primary {
@@ -26,6 +21,10 @@
   background-color: $primary;
   color: #fff;
   border-radius: 50px;
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   @media (min-width: 800px) {
     &:hover {
@@ -40,6 +39,10 @@
   transition: all 0.2s ease-in-out;
   border-radius: 10px;
 
+  &:active {
+    transform: scale(0.95);
+  }
+
   img {
     position: absolute;
     left: 10px;
@@ -53,13 +56,23 @@
 }
 
 .default {
-  border: 1px solid $gray;
-  color: $gray;
+  border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+  color: #000;
   transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
 
-  @media (min-width: 800px) {
-    &:hover {
-      background-color: rgba($color: $gray, $alpha: 0.2);
-    }
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img:nth-child(2) {
+    transform: rotate(-90deg);
   }
 }

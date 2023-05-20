@@ -28,9 +28,11 @@ export const Dropdown: FC<Props> = ({
           setIsActive((prev) => !prev);
         }}
       >
-        <Text type="h2">{name}</Text>
+        <Text type="h2" fw="500" fz="1rem">
+          {name}
+        </Text>
         <div className={`${styles.arrow} ${isActive && styles.active}`}>
-          {">"}
+          <img src="/arrow.svg" alt="arrow" />
         </div>
       </div>
       <div className={styles.inputs}>{children}</div>

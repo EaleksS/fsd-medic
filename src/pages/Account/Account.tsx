@@ -7,7 +7,6 @@ export const AccountPage: FC = (): JSX.Element => {
   const [isActiveProfile, setIsActiveProfile] = useState<boolean>(false);
   const [isActiveSecurity, setIsActiveSecurity] = useState<boolean>(false);
   const [isActiveFamily, setIsActiveFamily] = useState<boolean>(false);
-  const [isActiveCenter, setIsActiveCenter] = useState<boolean>(false);
 
   return (
     <Layout>
@@ -61,32 +60,35 @@ export const AccountPage: FC = (): JSX.Element => {
           <Input />
           <Input />
         </Dropdown>
-        <Dropdown
-          name={
-            <>
-              <img src="/account/center.svg" alt="center" /> Ведущий центр
-            </>
-          }
-          isActive={isActiveCenter}
-          setIsActive={setIsActiveCenter}
-          act_height={205}
-        >
-          <Input />
-          <Input />
-        </Dropdown>
+        <Button type="default">
+          <Text type="h2" fw="500" fz="1rem">
+            <img src="/account/center.svg" alt="center" /> Ведущий центр
+          </Text>
+          <img className={styles.arrow} src="/arrow.svg" alt="arrow" />
+        </Button>
 
         <Text type="h3">
           <span>Другое</span>
         </Text>
         <div className={styles.other}>
-          <Button type="social">
-            <img src="/account/1.svg" alt="1" /> Подписки
-          </Button>{" "}
-          <Button type="social">
-            <img src="/account/2.svg" alt="2" /> Сохраненное
-          </Button>{" "}
-          <Button type="social">
-            <img src="/account/3.svg" alt="3" /> Покупки
+          <Button type="default">
+            <Text type="h2" fw="500" fz="1rem">
+              <img src="/account/1.svg" alt="1" /> Подписки
+            </Text>
+
+            <img className={styles.arrow} src="/arrow.svg" alt="arrow" />
+          </Button>
+          <Button type="default">
+            <Text type="h2" fw="500" fz="1rem">
+              <img src="/account/2.svg" alt="2" /> Подписки
+            </Text>
+            <img src="/arrow.svg" alt="arrow" />
+          </Button>
+          <Button type="default">
+            <Text type="h2" fw="500" fz="1rem">
+              <img src="/account/3.svg" alt="3" /> Подписки
+            </Text>
+            <img src="/arrow.svg" alt="arrow" />
           </Button>
         </div>
       </div>
