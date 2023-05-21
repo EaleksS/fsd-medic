@@ -77,13 +77,13 @@ export const AccountPage: FC = (): JSX.Element => {
           </Button>
           <Button type="default">
             <Text type="h2" fw="500" fz="1rem">
-              <img src="/account/2.svg" alt="2" /> Подписки
+              <img src="/account/2.svg" alt="2" /> Сохраненное
             </Text>
             <img src="/arrow.svg" alt="arrow" />
           </Button>
           <Button type="default">
             <Text type="h2" fw="500" fz="1rem">
-              <img src="/account/3.svg" alt="3" /> Подписки
+              <img src="/account/3.svg" alt="3" /> Покупки
             </Text>
             <img src="/arrow.svg" alt="arrow" />
           </Button>
