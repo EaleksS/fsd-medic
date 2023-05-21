@@ -30,7 +30,7 @@ export const Map: FC = (): JSX.Element => {
           <MarkerF position={location} />
         </GoogleMap>
       ) : (
-        <Loader className={styles.loader} />
+        <Loader className={styles.loader} color="#FF8181" w={50} h={50} />
       )}
     </div>
   );
