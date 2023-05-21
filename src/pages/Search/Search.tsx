@@ -10,7 +10,7 @@ export const SearchPage: FC = (): JSX.Element => {
   return (
     <Layout>
       <div className={styles.search}>
-        <div className={styles.back}>{"<"}</div>
+        {/* <div className={styles.back}>{"<"}</div> */}
         <ISearch />
       </div>
       <div className={styles.nav}>
@@ -29,7 +29,7 @@ export const SearchPage: FC = (): JSX.Element => {
       </div>
 
       <div className={styles.cards}>
-        {[0, 1].map((e) => (
+        {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((e) => (
           <CenterCard key={e} />
         ))}
       </div>

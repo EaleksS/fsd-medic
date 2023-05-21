@@ -3,7 +3,7 @@
 .search {
   margin-top: 1rem;
   padding: 0 20px;
-  display: flex;
+  // display: flex;
   gap: 0.5rem;
 
   .back {
@@ -46,4 +46,11 @@
 
 .cards {
   padding: 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 }
