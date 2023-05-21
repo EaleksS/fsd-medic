@@ -22,7 +22,7 @@ export const Recovery: FC = (): JSX.Element => {
           className={`${select === "name" && styles.active}`}
           onClick={() => setSelect("name")}
         >
-          Имя Пользователя
+          Эл. Почта
         </button>
         <button
           className={`${select === "tel" && styles.active}`}
