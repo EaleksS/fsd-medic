@@ -6,5 +6,16 @@ import { DoctorCard } from "./components/DoctorCard/DoctorCard";
 import { CenterCard } from "./components/CenterCard/CenterCard";
 import { Message } from "./components/Message/Message";
 import { Call } from "./components/Call/Call";
+import { Mess } from "./components/Mess/Mess";
 
-export { Extra, Modal, Nav, Slider, DoctorCard, CenterCard, Message, Call };
+export {
+  Extra,
+  Modal,
+  Nav,
+  Slider,
+  DoctorCard,
+  CenterCard,
+  Message,
+  Call,
+  Mess,
+};

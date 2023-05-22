@@ -1,0 +1,41 @@
+@import "/src/app/styles/variables";
+
+.message {
+  display: flex;
+  justify-content: flex-end;
+
+  .cont {
+    padding: 1rem;
+    background: $primary;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    max-width: 250px;
+
+    h4 {
+      color: #fff;
+    }
+
+    .datetime {
+      margin-top: 5px;
+      font-size: 10px;
+      opacity: 0.6;
+      color: #fff;
+    }
+
+    .proch {
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      background: $primary;
+      padding: 2px;
+      border-radius: 50%;
+      color: rgba($color: #fff, $alpha: 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

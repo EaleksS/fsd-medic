@@ -1,14 +1,18 @@
-import { FC } from "react";
+import { Dispatch, FC } from "react";
 import styles from "./Input.module.scss";
 
 interface Props {
-  type?: "password" | "email" | "text" | "tel";
+  type?: "password" | "email" | "text" | "tel" | "textarea";
   placholder?: string;
+  value?: string;
+  setValue?: Dispatch<React.SetStateAction<string>>;
 }
 
 export const Input: FC<Props> = ({
   type = "text",
   placholder,
+  value,
+  setValue,
 }): JSX.Element => {
   switch (type) {
     case "email":
@@ -49,6 +53,20 @@ export const Input: FC<Props> = ({
               placeholder={placholder ? placholder : "Введите тел.номер"}
             />
           </div>
+        </label>
+      );
+
+    case "textarea":
+      return (
+        <label className={`${styles.label} ${styles.default}`}>
+          <div>
+            <textarea
+              placeholder={placholder ? placholder : "Сообщения..."}
+              value={value}
+              onChange={(e) => setValue && setValue(String(e.target.value))}
+            />
+          </div>
+          <img style={{ opacity: 1 }} src="/chat/2.svg" alt="..." />
         </label>
       );
 

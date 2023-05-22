@@ -7,6 +7,7 @@ import { Register } from "./components/Auth/Register/Register";
 import { Recovery } from "./components/Auth/Recovery/Recovery";
 import { Messages } from "./components/Messages/Messages";
 import { Calls } from "./components/Calls/Calls";
+import { Chat } from "./components/Chat/Chat";
 
 export {
   Layout,
@@ -18,4 +19,5 @@ export {
   Recovery,
   Messages,
   Calls,
+  Chat,
 };
