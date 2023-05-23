@@ -83,6 +83,7 @@
         0px 1px 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       z-index: 2;
+      transition: all 0.2s ease-in-out;
 
       &.dropinfo_v {
         transform: translateX(-120px);
