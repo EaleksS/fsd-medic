@@ -11,7 +11,7 @@ export const Nav: FC = (): JSX.Element => {
       <ul>
         <li onClick={() => navigate("/account")}>
           <div className={styles.line}></div>
-          <img src="/nav/profile.svg" alt="profile" />
+          <img src="/nav/profile2.svg" alt="profile" />
           <Text type="h3" fw="500">
             Аккаунт
           </Text>
@@ -19,7 +19,7 @@ export const Nav: FC = (): JSX.Element => {
         <li>
           <div className={styles.line}></div>
 
-          <img src="/nav/entries.svg" alt="profile" />
+          <img src="/nav/entries2.svg" alt="profile" />
           <Text type="h3" fw="500">
             Записи
           </Text>
@@ -27,7 +27,7 @@ export const Nav: FC = (): JSX.Element => {
         <li>
           <div className={styles.line}></div>
 
-          <img src="/nav/mcard.svg" alt="profile" />
+          <img src="/nav/mcard2.svg" alt="profile" />
           <Text type="h3" fw="500">
             Медицинская карта
           </Text>
@@ -35,14 +35,14 @@ export const Nav: FC = (): JSX.Element => {
         <li onClick={() => navigate("/map")}>
           <div className={styles.line}></div>
 
-          <img src="/nav/geo.svg" alt="profile" />
+          <img src="/nav/geo2.svg" alt="profile" />
           <Text type="h3" fw="500">
             Местоположение
           </Text>
         </li>
         <li>
           <div className={styles.line}></div>
-          <img src="/nav/settings.svg" alt="profile" />
+          <img src="/nav/settings2.svg" alt="profile" />
           <Text type="h3" fw="500">
             Настройки
           </Text>
@@ -50,7 +50,7 @@ export const Nav: FC = (): JSX.Element => {
         </li>
         <li className={styles.logout}>
           <div className={styles.line}></div>
-          <img src="/nav/logout.svg" alt="logout" />
+          <img src="/nav/logout2.svg" alt="logout" />
           <Text type="h3" fw="500">
             Выход
           </Text>

@@ -9,6 +9,7 @@ import { ISearch } from "./ui/ISearch/ISearch";
 import { useLocation } from "./lib/hooks/useLocation";
 import { Input } from "./ui/Input/Input";
 import { Dropdown } from "./ui/Dropdown/Dropdown";
+import { RadioBtn } from "./ui/RadioBtn/RadioBtn";
 
 export {
   Button,
@@ -21,5 +22,6 @@ export {
   ISearch,
   useLocation,
   Input,
-  Dropdown
+  Dropdown,
+  RadioBtn,
 };

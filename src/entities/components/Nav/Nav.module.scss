@@ -12,7 +12,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      color: #fff;
+      color: #000;
       height: 4rem;
       cursor: pointer;
 
@@ -22,7 +22,7 @@
         left: 0;
         right: 0;
         height: 1px;
-        background: #fff;
+        background: #000;
         opacity: 0.2;
 
         &_bottom {
@@ -31,7 +31,7 @@
           left: 0;
           right: 0;
           height: 1px;
-          background: #fff;
+          background: #000;
           opacity: 0.2;
         }
       }
