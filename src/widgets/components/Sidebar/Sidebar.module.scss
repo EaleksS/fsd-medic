@@ -13,6 +13,8 @@
   transform: translateX(-100vw);
   transition: all 0.2s ease-in-out;
 
+  box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.2);
+
   &.active {
     opacity: 1;
     transform: translateX(0);
@@ -22,10 +24,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4.5rem;
 
     .user {
       margin-top: 2rem;
+    }
+  }
+}
+
+.lives {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  h5 {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    content: "";
+    height: 1px;
+    background: rgba($color: #000000, $alpha: 0.2);
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(1.3rem);
+  }
+
+  .live {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    img {
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      .dropinfo {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    .dropinfo {
+      pointer-events: none;
+      opacity: 0;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 140px;
+      background: #fff;
+      padding: 0.5rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),
+        0px 1px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      z-index: 2;
+
+      &.dropinfo_v {
+        transform: translateX(-120px);
+
+        &::after {
+          transform: rotate(180deg) translateX(-120px);
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute; /* Абсолютное позиционирование */
+        left: 10px;
+        top: -20px; /* Положение треугольника */
+        transform: rotate(180deg);
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-top: 10px solid #fff; /* Добавляем треугольник */
+      }
     }
   }
 }
