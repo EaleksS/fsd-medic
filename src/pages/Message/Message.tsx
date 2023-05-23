@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { Calls, Chat, Layout, Messages } from "../../widgets";
 import styles from "./Message.module.scss";
+import { ISearch } from "../../shared";
 
 export const MessagePage: FC = (): JSX.Element => {
   const [select, setSelect] = useState("message");
@@ -21,6 +22,9 @@ export const MessagePage: FC = (): JSX.Element => {
         >
           Звонки
         </button>
+      </div>
+      <div style={{ padding: "1rem 1rem" }}>
+        <ISearch />
       </div>
       <div className={styles.content}>
         {select === "message" ? (
