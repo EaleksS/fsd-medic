@@ -1,11 +1,10 @@
 import { FC, useState } from "react";
-import { Calls, Chat, Layout, Messages } from "../../widgets";
+import { Calls, Layout, Messages } from "../../widgets";
 import styles from "./Message.module.scss";
 import { ISearch } from "../../shared";
 
 export const MessagePage: FC = (): JSX.Element => {
   const [select, setSelect] = useState("message");
-  const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
     <Layout>
@@ -27,15 +26,7 @@ export const MessagePage: FC = (): JSX.Element => {
         <ISearch />
       </div>
       <div className={styles.content}>
-        {select === "message" ? (
-          <div onClick={() => setIsActive(true)}>
-            <Messages />
-          </div>
-        ) : (
-          <Calls />
-        )}
-
-        {isActive && <Chat />}
+        {select === "message" ? <Messages /> : <Calls />}
       </div>
     </Layout>
   );
