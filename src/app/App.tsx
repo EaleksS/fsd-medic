@@ -6,10 +6,6 @@ import "./styles/reset.min.css";
 import { PSuspense } from "./providers/Suspense";
 
 export const App = () => {
-  // const location = useLocation();
-
-  // console.log(location);
-
   return (
     <PSuspense>
       <Routing>

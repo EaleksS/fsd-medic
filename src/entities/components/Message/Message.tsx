@@ -1,10 +1,13 @@
 import { FC } from "react";
 import styles from "./Message.module.scss";
 import { Text } from "../../../shared";
+import { useNavigate } from "react-router-dom";
 
 export const Message: FC = (): JSX.Element => {
+  const navigate = useNavigate();
+
   return (
-    <div className={styles.message}>
+    <div className={styles.message} onClick={() => navigate("/message/1")}>
       <div className={styles.user}>
         <img src="/user.png" alt="user" />
         <div className={styles.desc}>

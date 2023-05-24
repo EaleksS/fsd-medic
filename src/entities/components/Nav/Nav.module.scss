@@ -16,6 +16,14 @@
       height: 4rem;
       cursor: pointer;
 
+      @media (min-width: 800px) {
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
       .line {
         position: fixed;
         transform: translateY(-2rem);

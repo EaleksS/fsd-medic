@@ -29,8 +29,14 @@
     background: $bg-color;
 
     transform: translateX(-100vw);
+    border-radius: 10px;
 
     transition: all 0.2s ease-in-out;
+
+    @media (max-width: 800px) {
+      width: 100vw;
+      height: 100vh;
+    }
 
     &.active {
       transform: translateX(0);
