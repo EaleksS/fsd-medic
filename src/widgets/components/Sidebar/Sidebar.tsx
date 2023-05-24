@@ -11,7 +11,7 @@ export const Sidebar: FC<Props> = ({ isActive }): JSX.Element => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    if (width > 1400) {
+    if (width > 800) {
       document.body.style.overflowY = "auto";
       return;
     }
