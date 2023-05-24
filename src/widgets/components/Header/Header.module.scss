@@ -1,12 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
 
   .user {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 
     img {
       width: 40px;

@@ -1,6 +1,5 @@
 import { Dispatch, FC } from "react";
 import styles from "./Header.module.scss";
-import { Text } from "../../../shared";
 
 interface Props {
   setIsActive: Dispatch<React.SetStateAction<boolean>>;
@@ -13,11 +12,10 @@ export const Header: FC<Props> = ({ setIsActive }): JSX.Element => {
         className={styles.user}
         onClick={(e) => {
           e.stopPropagation();
-          setIsActive(true);
+          setIsActive((prev) => !prev);
         }}
       >
-        <img src="/user.png" alt="user" />
-        <Text type="h1">asinast.petro</Text>
+        <img src="/burger.svg" alt="menu" />
       </div>
     </header>
   );
