@@ -33,7 +33,7 @@ export const Chat: FC = (): JSX.Element => {
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((e) => (
           <Mess key={e} id={e} />
         ))}
-        <div ref={bottomRef}></div>
+        <div className={styles.b} ref={bottomRef}></div>
       </div>
       <footer className={styles.footer}>
         <img src="/chat/1.svg" alt="..." />

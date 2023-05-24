@@ -59,7 +59,9 @@ export const Input: FC<Props> = ({
     case "textarea":
       return (
         <label className={`${styles.label} ${styles.default}`}>
-          <div>
+          <div
+            style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          >
             <textarea
               placeholder={placholder ? placholder : "Сообщения..."}
               value={value}
