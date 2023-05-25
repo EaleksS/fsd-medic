@@ -27,3 +27,21 @@
     position: relative;
   }
 }
+
+.container {
+  margin-left: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+
+  @media (max-width: 1400px) {
+    margin: 0;
+  }
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+
+  .chat {
+    position: relative;
+  }
+}

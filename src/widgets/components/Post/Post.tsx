@@ -37,7 +37,8 @@ export const Post: FC = (): JSX.Element => {
             </div>
           </div>
           <div className={styles.btns}>
-            <img src="/post/pereslat.svg" alt="pereslat" />
+            {/* <img src="/post/pereslat.svg" alt="pereslat" /> */}
+            <Text>19:23 РМ</Text>
           </div>
         </div>
       </div>

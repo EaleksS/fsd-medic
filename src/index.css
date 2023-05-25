@@ -10,8 +10,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
+  body {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
   }

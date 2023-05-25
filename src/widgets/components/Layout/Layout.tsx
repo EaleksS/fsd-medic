@@ -7,9 +7,19 @@ import { useWindowDimensions } from "../../../shared";
 
 interface Props {
   children: ReactNode;
+  nowrapp?: boolean;
+  noside?: boolean;
+  nomenu?: boolean;
+  noheader?: boolean;
 }
 
-export const Layout: FC<Props> = ({ children }): JSX.Element => {
+export const Layout: FC<Props> = ({
+  children,
+  nowrapp = false,
+  noheader = false,
+  nomenu = false,
+  noside = false,
+}): JSX.Element => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   const { width } = useWindowDimensions();
@@ -19,11 +29,11 @@ export const Layout: FC<Props> = ({ children }): JSX.Element => {
   };
 
   return (
-    <div className={styles.wrapper} onClick={handleClose}>
-      {width < 1400 && <Header setIsActive={setIsActive} />}
-      <Sidebar isActive={isActive} />
+    <div className={!nowrapp ? styles.wrapper : ""} onClick={handleClose}>
+      {width < 1400 && !noheader && <Header setIsActive={setIsActive} />}
+      {!noside && <Sidebar isActive={isActive} />}
       {children}
-      <NavBar />
+      {!nomenu && <NavBar />}
     </div>
   );
 };
