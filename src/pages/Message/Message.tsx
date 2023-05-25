@@ -30,7 +30,10 @@ export const MessagePage: FC = (): JSX.Element => {
             <div style={{ padding: "1rem 1rem" }}>
               <ISearch />
             </div>
-            <div className={styles.content} onClick={() => setIsActive(true)}>
+            <div
+              className={styles.content}
+              onClick={() => width < 800 && setIsActive(true)}
+            >
               {select === "message" ? <Messages /> : <Calls />}
             </div>
           </div>

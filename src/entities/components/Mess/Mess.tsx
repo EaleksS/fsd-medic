@@ -11,7 +11,6 @@ export const Mess: FC<Props> = ({ id }): JSX.Element => {
   return (
     <div
       className={styles.message}
-      style={id % 2 === 0 ? { justifyContent: "start" } : {}}
     >
       <div
         className={styles.cont}
