@@ -16,7 +16,14 @@ body {
 
 .extra {
   position: fixed;
-  right: 40px;
+  // right: 40px;
+  transform: translateX(800px);
   bottom: 0;
   z-index: 5;
+
+  div {
+    div:nth-child(3) {
+      box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
