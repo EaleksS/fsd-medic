@@ -3,7 +3,8 @@ import styles from "./Layout.module.scss";
 import { NavBar } from "../NavBar/NavBar";
 import { Header } from "../Header/Header";
 import { Sidebar } from "../Sidebar/Sidebar";
-import { useWindowDimensions } from "../../../shared";
+import { Blur, useWindowDimensions } from "../../../shared";
+import { Extra } from "../../../entities";
 
 interface Props {
   children: ReactNode;
@@ -21,6 +22,7 @@ export const Layout: FC<Props> = ({
   noside = false,
 }): JSX.Element => {
   const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActiveExtra, setIsActiveExtra] = useState<boolean>(false);
 
   const { width } = useWindowDimensions();
 
@@ -33,7 +35,16 @@ export const Layout: FC<Props> = ({
       {width < 1400 && !noheader && <Header setIsActive={setIsActive} />}
       {!noside && <Sidebar isActive={isActive} />}
       {children}
-      {!nomenu && <NavBar />}
+      {!nomenu && width < 800 ? (
+        <NavBar />
+      ) : (
+        <>
+          <div className={styles.extra}>
+            <Extra isActive={isActiveExtra} setIsActive={setIsActiveExtra} />
+          </div>
+          <Blur isActive={isActiveExtra} setIsActive={setIsActiveExtra} />
+        </>
+      )}
     </div>
   );
 };

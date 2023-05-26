@@ -3,7 +3,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: calc(100vw - 5rem);
+  width: 300px;
   background-color: rgba($color: #ffff, $alpha: 1);
   backdrop-filter: blur(2rem);
   z-index: 4;
@@ -15,10 +15,6 @@
 
   box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.2);
 
-  @media (min-width: 800px) {
-    width: 350px;
-  }
-
   &.active {
     opacity: 1;
     transform: translateX(0);
@@ -28,6 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
+    height: 100%;
 
     .user {
       margin-top: 2rem;
@@ -38,6 +36,7 @@
 .lives {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  position: relative;
 
   h5 {
     margin-bottom: 1rem;
@@ -47,8 +46,8 @@
     content: "";
     height: 1px;
     background: rgba($color: #000000, $alpha: 0.2);
-    left: 0;
-    right: 0;
+    left: -50px;
+    right: -50px;
     position: absolute;
     transform: translateY(1.3rem);
   }

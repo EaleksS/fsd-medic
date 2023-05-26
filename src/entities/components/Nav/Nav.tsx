@@ -9,6 +9,27 @@ export const Nav: FC = (): JSX.Element => {
   return (
     <nav className={styles.nav}>
       <ul>
+        <li onClick={() => navigate("/")}>
+          <div className={styles.line}></div>
+          <img src="/navbar/home.svg" alt="profile" />
+          <Text type="h3" fw="500">
+            Главная
+          </Text>
+        </li>
+        <li onClick={() => navigate("/search")}>
+          <div className={styles.line}></div>
+          <img src="/navbar/search.svg" alt="profile" />
+          <Text type="h3" fw="500">
+            Поиск
+          </Text>
+        </li>
+        <li onClick={() => navigate("/message")}>
+          <div className={styles.line}></div>
+          <img src="/navbar/mess.svg" alt="profile" />
+          <Text type="h3" fw="500">
+            Сообщение
+          </Text>
+        </li>
         <li onClick={() => navigate("/account")}>
           <div className={styles.line}></div>
           <img src="/nav/profile2.svg" alt="profile" />
@@ -46,9 +67,8 @@ export const Nav: FC = (): JSX.Element => {
           <Text type="h3" fw="500">
             Настройки
           </Text>
-          <div className={styles.line_bottom}></div>
         </li>
-        <li className={styles.logout}>
+        <li>
           <div className={styles.line}></div>
           <img src="/nav/logout2.svg" alt="logout" />
           <Text type="h3" fw="500">
