@@ -1,6 +1,19 @@
 .account {
   position: relative;
 
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+  }
+
   h3 {
     margin-left: 20px;
     margin-bottom: 5px;

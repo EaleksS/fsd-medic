@@ -15,6 +15,10 @@
 
   box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.2);
 
+  @media (max-width: 800px) {
+    z-index: 5;
+  }
+
   &.active {
     opacity: 1;
     transform: translateX(0);
@@ -25,6 +29,7 @@
     flex-direction: column;
     align-items: center;
     overflow: auto;
+    overflow-x: hidden;
     height: 100%;
 
     .user {

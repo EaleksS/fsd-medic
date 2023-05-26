@@ -11,6 +11,18 @@ export const AccountPage: FC = (): JSX.Element => {
   return (
     <Layout>
       <div className={styles.account}>
+        <div className={styles.user}>
+          <img src="/user.png" alt="" />
+          <div>
+            <Text type="h1" fz="32px" lh="39px">
+              Лорем Ипсум
+            </Text>
+            <Text type="h4">
+              <span style={{ color: "gray" }}>Пользователь</span>
+            </Text>
+          </div>
+        </div>
+
         <Text type="h3">
           <span>Основные</span>
         </Text>
@@ -48,7 +60,7 @@ export const AccountPage: FC = (): JSX.Element => {
         <Dropdown
           name={
             <>
-              <img src="/account/family.svg" alt="family" /> Моя семья
+              <img src="/account/family.svg" alt="family" /> Доступ
             </>
           }
           isActive={isActiveFamily}
