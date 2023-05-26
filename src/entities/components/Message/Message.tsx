@@ -1,10 +1,8 @@
 import { FC } from "react";
 import styles from "./Message.module.scss";
 import { Text } from "../../../shared";
-import { useNavigate } from "react-router-dom";
 
 export const Message: FC = (): JSX.Element => {
-  const navigate = useNavigate();
 
   return (
     <div className={styles.message}>
