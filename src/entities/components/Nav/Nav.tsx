@@ -37,7 +37,7 @@ export const Nav: FC = (): JSX.Element => {
             Аккаунт
           </Text>
         </li>
-        <li>
+        <li onClick={() => navigate("/entries")}>
           <div className={styles.line}></div>
 
           <img src="/nav/entries2.svg" alt="profile" />
@@ -45,7 +45,7 @@ export const Nav: FC = (): JSX.Element => {
             Записи
           </Text>
         </li>
-        <li>
+        <li onClick={() => navigate("/medic-card")}>
           <div className={styles.line}></div>
 
           <img src="/nav/mcard2.svg" alt="profile" />
