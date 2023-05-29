@@ -24,9 +24,7 @@ export const Filters: FC<Props> = ({ isActive }): JSX.Element => {
 
   return (
     <div
-      className={`${styles.filters} ${
-        (width > 1400 || isActive) && styles.active
-      }`}
+      className={`${styles.filters} ${isActive && styles.active}`}
       onClick={(e) => e.stopPropagation()}
     >
       <div className={styles.content}>filters</div>

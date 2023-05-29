@@ -21,8 +21,8 @@
     z-index: 2;
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
     }
 
     img:nth-child(3) {
@@ -30,8 +30,15 @@
       height: 24px;
     }
 
+    .phone {
+      width: 40px;
+      height: 40px;
+    }
+
     .title {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
   }
 

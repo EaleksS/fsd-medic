@@ -76,7 +76,7 @@ export const AccountPage: FC = (): JSX.Element => {
           <img className={styles.arrow} src="/arrow.svg" alt="arrow" />
         </Button>
 
-        <Text type="h3">
+        <Text type="h3" mt="2rem">
           <span>Другое</span>
         </Text>
         <div className={styles.other}>

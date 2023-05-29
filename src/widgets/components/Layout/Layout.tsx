@@ -68,6 +68,18 @@ export const Layout: FC<Props> = ({
           <Blur isActive={isActiveExtra} setIsActive={setIsActiveExtra} />
         </>
       )}
+
+      {!filters && width > 800 && (
+        <button
+          className={styles.filters}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsActiveFilters((prev) => !prev);
+          }}
+        >
+          Фильтры
+        </button>
+      )}
     </div>
   );
 };

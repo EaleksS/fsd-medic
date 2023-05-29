@@ -5,9 +5,15 @@
   justify-content: flex-start;
   padding-left: 1rem;
 
+  .user {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
   .cont {
     padding: 1rem;
-    background: $primary;
+    background: #8195ff;
     border-radius: 20px;
     display: flex;
     align-items: flex-start;
@@ -30,7 +36,7 @@
       position: absolute;
       bottom: -5px;
       right: 0;
-      background: $primary;
+      background: #8195ff;
       padding: 2px;
       border-radius: 50%;
       color: rgba($color: #fff, $alpha: 0.7);

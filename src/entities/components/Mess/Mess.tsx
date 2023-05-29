@@ -9,12 +9,11 @@ interface Props {
 
 export const Mess: FC<Props> = ({ id }): JSX.Element => {
   return (
-    <div
-      className={styles.message}
-    >
+    <div className={styles.message}>
+      <img src="/user.png" className={styles.user} alt="" />
       <div
         className={styles.cont}
-        style={id % 2 === 0 ? { background: "#828282" } : {}}
+        style={id % 2 === 0 ? { background: "#ff8181" } : {}}
       >
         {id % 2 !== 0 && (
           <div className={styles.proch}>

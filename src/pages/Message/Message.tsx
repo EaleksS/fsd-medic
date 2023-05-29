@@ -9,10 +9,19 @@ export const MessagePage: FC = (): JSX.Element => {
   const { width } = useWindowDimensions();
 
   return (
-    <Layout nowrapp noheader={isActive} nomenu={isActive} noside={isActive}>
+    <Layout
+      nowrapp
+      noheader={isActive}
+      nomenu={isActive}
+      noside={isActive}
+      filters
+    >
       <div className={styles.container}>
         {!isActive && (
           <div>
+            <div className={styles.search}>
+              <ISearch />
+            </div>
             <div className={styles.nav}>
               <button
                 className={`${select === "message" && styles.active}`}
@@ -27,9 +36,7 @@ export const MessagePage: FC = (): JSX.Element => {
                 Звонки
               </button>
             </div>
-            <div style={{ padding: "1rem 1rem" }}>
-              <ISearch />
-            </div>
+
             <div
               className={styles.content}
               onClick={() => width < 800 && setIsActive(true)}

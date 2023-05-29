@@ -23,12 +23,14 @@ export const Chat: FC = (): JSX.Element => {
   return (
     <div className={styles.chat}>
       <header className={styles.header} onClick={() => setIsActive(true)}>
-        <img src="/user.png" alt="user" />
         <div className={styles.title}>
-          <Text type="h1">Александр Петров</Text>
-          <Text>Онлайн</Text>
+          <img src="/user.png" alt="user" />
+          <div>
+            <Text type="h1">Александр Петров</Text>
+            <Text>Онлайн</Text>
+          </div>
         </div>
-        <img src="/call.svg" alt="call" onClick={(e) => e.stopPropagation()} />
+        <img src="/call.svg" alt="call" className={styles.phone} onClick={(e) => e.stopPropagation()} />
       </header>
       <div className={styles.content}>
         <Text>Четверг, 12 мая</Text>
